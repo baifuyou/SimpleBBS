@@ -1,0 +1,48 @@
+.container {
+    width: 960px;
+}
+
+.welcome {
+    margin-left: 460px;
+}
+
+.top_bar {
+    padding-top: 20px;
+}
+
+.main_content {
+    margin-top: 20px;
+}
+
+.post-list {
+    margin-top: 20px;
+}
+
+.new-post-btn {
+    width: 40px;
+    margin-top: 20px;
+}
+
+.search {
+    margin-left: 15px;
+}
+
+.new-post {
+    margin-top: 20px;
+}
+
+.addDate {
+    margin-left: 600px;
+}
+
+.post-info {
+    padding-top: 5px;
+}
+
+.list-group-item {
+    margin-left: 15px;
+}
+
+.pageIndex {
+    margin-left: 15px;
+}

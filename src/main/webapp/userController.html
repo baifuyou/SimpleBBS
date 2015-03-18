@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh" class="lift:UserControl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/userControl.css">
+    <script type="text/javascript" src="static/js/lib/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="static/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/userControl.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="nav-bar">
+        <ul id="sheet-list" class="nav nav-tabs">
+            <li class="active"><a sheet-name="profile-setting">用户</a></li>
+            <li><a sheet-name="password-setting">密码</a></li>
+        </ul>
+    </div>
+    <div class="setting-sheet" id="profile-setting">
+        <form class="form-horizontal">
+            <div class="form-group setting-item">
+                <label for="nickname"
+                       class="col-sm-1 control-label setting-item-title">昵 称</label>
+
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" id="nickname" required autocomplete="off"
+                           placeholder="昵 称" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="save-profile" class="btn btn-primary">保 存</button>
+                <span class="info-success hidden" id="save-profile-success">保存成功</span>
+                <span class="info-error hidden" id="save-profile-failure">保存失败</span>
+            </div>
+        </form>
+    </div>
+    <div class="setting-sheet hidden" id="password-setting">
+        <form class="form-horizontal">
+            <div class="form-group setting-item">
+                <label for="passowrd"
+                       class="col-sm-1 control-label setting-item-title">旧密码</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" type="password" id="old-password"
+                           placeholder="旧密码">
+                    <span id="password-error" class="info-error hidden">密码错误</span>
+                </div>
+            </div>
+            <div class="form-group setting-item">
+                <label for="passowrd"
+                       class="col-sm-1 control-label setting-item-title">新密码</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" type="password" id="new-password"
+                           placeholder="新密码">
+                    <span id="password-format-error" class="info-error hidden">密码长度应该在10到20位之间，并且不可以是纯数字</span>
+                </div>
+            </div>
+            <div class="form-group setting-item">
+                <label for="passowrd"
+                       class="col-sm-1 control-label setting-item-title">重复新密码</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" type="password" id="new-password2"
+                           placeholder="重复新密码">
+                    <span id="two-password-not-identical" class="info-error hidden">两次密码不一致</span>
+                </div>
+            </div>
+
+            <div class="">
+                <button type="submit" id="save-password" class="btn btn-primary">保
+                    存
+                </button>
+                <span class="info-success hidden" id="save-password-success">保存成功</span>
+                <span class="info-error hidden" id="save-password-failure">保存失败</span>
+                <span class="info-error hidden" id="server-error">服务器发生未知错误</span>
+                <span id = "request-format-error" class = "info-error hidden">页面发生未知错误</span>
+                <span class="info-error hidden" id="not-login">您还没有登录</span>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

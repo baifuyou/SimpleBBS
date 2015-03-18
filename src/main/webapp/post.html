@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="lift:Post">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/post.css">
+    <script type="text/javascript" src="static/js/lib/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="static/js/lib/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+<div class = "container">
+    <div class = "top-bar">
+
+    </div>
+    <div class = "post-body">
+    </div>
+    <div class = "reply-list list-group">
+    </div>
+    <div class="new-reply">
+        <form method = "post">
+            <textarea class="form-control" placeholder="回复内容" required rows="5" name="reply-content"></textarea>
+            <input class="btn btn-lg btn-primary btn-block new-reply-btn" type="submit" value="回复">
+            <span class="lift:Msg?id=not-login&errorClass=error error-info">error</span>
+        </form>
+    </div>
+    <div class="pageIndex">
+        <ul class="pagination">
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

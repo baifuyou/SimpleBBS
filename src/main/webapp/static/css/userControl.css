@@ -1,0 +1,54 @@
+body {
+	background-color: #eee;
+}
+
+a {
+	cursor: pointer;
+}
+
+label {
+	font-weight: normal;
+}
+
+.setting-sheet {
+	margin-top: 25px;
+}
+
+#save-profile {
+    margin-left: 14px;
+}
+
+.setting-item-title {
+	margin-right: 25px;
+	width: 150px;
+	margin-bottom: 0px;
+}
+
+.form-control {
+	width: 300px;
+}
+
+.setting-item span {
+	padding-left:20px;
+}
+
+.control-label {
+	text-align: left !important;
+	width: 150px;
+}
+
+.nav li.active a {
+	background-color: #eee !important;
+}
+
+.info-success {
+	color: green;
+}
+
+.info-error {
+	color: red;
+}
+
+input[type="radio"] {
+	margin-right:5px;
+}
